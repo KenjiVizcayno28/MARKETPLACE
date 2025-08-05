@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    <title>Contact</title>
+{% endblock %}
+
+{% block content %}
+    <div class = "container">
+        <div class = "row">
+            <div class="col-sm-6 col-12">
+                <form method="post">
+                    {% csrf_token %}
+                    {% for field in register_form %}
+                        {{ field.errors }}
+                        {{ field }}
+                    {% endfor %}
+
+                    <button type ='submit' class="btn btn-outline-primary">REGISTER</button>
+                </form>
+            </div>
+        </div>
+    </div>
+{% endblock %}
