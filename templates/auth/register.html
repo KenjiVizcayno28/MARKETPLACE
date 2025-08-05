@@ -14,7 +14,10 @@
                         {{ field.errors }}
                         {{ field }}
                     {% endfor %}
-
+                    <input id = "id_username" class = "form-control" type="text" placeholder="Enter your Username" required=""> <br>
+                    <input id = "id_email" class = "form-control" type="email" placeholder="Enter your Email" maxlength="320" required =""><br>
+                    <input id = "id_password" class = "form-control" type = "password" name = "password" placeholder="Enter your Password" ><br>
+                    <input id="id_password2" class = "form-control" type="password" name = "password2" placeholder="Enter your password again"><br>
                     <button type ='submit' class="btn btn-outline-primary">REGISTER</button>
                 </form>
             </div>
